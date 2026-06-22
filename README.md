@@ -14,8 +14,8 @@ Analytics engineering projects built with dbt, Streamlit, Python, and SQL.
 
 ## Data Model
 
-![Data Model](datamodel.png)
+![Data Model](Architecture.drawio.png)
 
 ## Live Dashboard
 
-[View Dashboard](https://saasconversions.streamlit.app)
+[View Dashboard](https://saasconversions-drux8gj4lcnpkq5v95qjwj.streamlit.app/)
