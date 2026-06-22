@@ -1,11 +1,13 @@
 import streamlit as st
 import pandas as pd
 import duckdb
+import os
 
 st.title("SaaS Conversion Dashboard")
 st.write("User conversion and churn metrics")
 
-con = duckdb.connect()
+db_path = os.path.join(os.path.dirname(__file__), "analytics.duckdb")
+con = duckdb.connect(db_path)
 
 df = con.execute("SELECT * FROM fctconversions ORDER BY signup_month").fetchdf()
 
