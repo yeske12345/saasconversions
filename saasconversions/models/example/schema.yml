@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stgusers
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+
+  - name: intuseractivity
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dimusers
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fctconversions
+    columns:
+      - name: signup_month
+        tests:
+          - not_null
